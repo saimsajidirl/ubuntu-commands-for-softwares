@@ -27,6 +27,14 @@ sudo apt install -y git-flow
 
 ---
 
+## AI
+```bash
+# Claude Desktop
+curl -fsSL https://pkg.claude-desktop-debian.dev/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/claude-desktop.gpg && echo "deb [signed-by=/usr/share/keyrings/claude-desktop.gpg arch=amd64,arm64] https://pkg.claude-desktop-debian.dev stable main" | sudo tee /etc/apt/sources.list.d/claude-desktop.list && sudo apt update && sudo apt install claude-desktop
+```
+
+---
+
 ## Text Editors & IDEs
 ```bash
 sudo apt install -y code
